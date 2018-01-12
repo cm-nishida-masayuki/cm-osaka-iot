@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "alexa-sdk": "^1.0.18",
+    "config": "^1.26.2",
+    "dateformat": "^3.0.2",
+    "js-yaml": "^3.9.1",
+    "require-from-string": "^2.0.1",
+    "string-template": "^1.0.0",
+    "yaml": "^0.3.0",
+    "date-utils": "^1.2.21"
+  }
+}
