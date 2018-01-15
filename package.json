@@ -1,0 +1,16 @@
+{
+  "name": "cm-osaka-iot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "alexa-sdk": "^1.0.25",
+    "aws-sdk": "^2.181.0",
+    "moment": "^2.20.1",
+    "moment-timezone": "^0.5.14"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
