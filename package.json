@@ -1,12 +1,16 @@
 {
+  "name": "cm-osaka-iot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "dependencies": {
-    "alexa-sdk": "^1.0.18",
-    "config": "^1.26.2",
-    "dateformat": "^3.0.2",
-    "js-yaml": "^3.9.1",
-    "require-from-string": "^2.0.1",
-    "string-template": "^1.0.0",
-    "yaml": "^0.3.0",
-    "date-utils": "^1.2.21"
+    "alexa-sdk": "^1.0.25",
+    "aws-sdk": "^2.181.0",
+    "moment": "^2.20.1",
+    "moment-timezone": "^0.5.14"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
