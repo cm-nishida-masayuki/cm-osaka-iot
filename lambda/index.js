@@ -10,6 +10,7 @@ var Alexa = require('alexa-sdk');
 var APP_ID = undefined;
 
 var SKILL_NAME = "豆知識";
+var OPENING_MESSAGE = "数字ゲームをしましょう。数字を1から順に3つまで言いあって、31を言ってしまった人の負けです。では、あなたから始めてください";
 var GET_FACT_MESSAGE = "知ってましたか？";
 var HELP_MESSAGE = "豆知識を聞きたい時は「豆知識」と、終わりたい時は「おしまい」と言ってください。どうしますか？";
 var HELP_REPROMPT = "どうしますか？";
@@ -34,9 +35,17 @@ exports.handler = function(event, context, callback) {
 
 var handlers = {
     'LaunchRequest': function () {
-        this.emit('GetNewFactIntent');
+        this.emit('StartGameIntent');
     },
-    'GetNewFactIntent': function () {
+    'StartGameIntent': function () {
+        this.emit(':tell', OPENING_MESSAGE);
+        // var factArr = data;
+        // var factIndex = Math.floor(Math.random() * factArr.length);
+        // var randomFact = factArr[factIndex];
+        // var speechOutput = GET_FACT_MESSAGE + randomFact;
+        // this.emit(':tellWithCard', speechOutput, SKILL_NAME, randomFact)
+    },
+    'PlayGameIntent': function () {
         var factArr = data;
         var factIndex = Math.floor(Math.random() * factArr.length);
         var randomFact = factArr[factIndex];

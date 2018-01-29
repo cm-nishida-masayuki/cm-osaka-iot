@@ -1,0 +1,19 @@
+{
+  "intents": [
+    {
+      "intent": "StartGameIntent"
+    },
+    {
+      "intent": "PlayGameIntent"
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    }
+  ]
+}

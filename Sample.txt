@@ -1,0 +1,2 @@
+StartGameIntent 始めて
+PlayGameIntent 遊んで
